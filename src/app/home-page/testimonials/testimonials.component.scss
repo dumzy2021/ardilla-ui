@@ -1,0 +1,106 @@
+.testimonial-section {
+  background: #f3f4f6;
+  padding: 2rem 0;
+  .title {
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #3d0072;
+    span {
+      color: #e8356d;
+    }
+  }
+  .content {
+    margin-top: 6rem;
+  }
+  .subtitle {
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: #3d0072;
+  }
+  .info-box {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 2rem;
+    max-width: 380px;
+
+    transition: all 0.5s ease-in-out;
+    .user {
+      display: block;
+      border-radius: 20px;
+    }
+    .video-icon {
+      z-index: 3;
+      position: absolute;
+      transition: all 0.8s ease-in-out;
+
+      width: 50px;
+      left: 50%;
+      top: 50%;
+      transform: translate(20%, 150%);
+      opacity: 0;
+    }
+    .details {
+      width: 100%;
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      padding: 0 0.9rem;
+      z-index: 3;
+      transition: all 0.8s ease-in-out;
+      transform: translate(40%, 300%);
+      .name {
+        font-weight: 700;
+        font-size: 18px;
+        color: #ffffff;
+      }
+      .question {
+        font-weight: 400;
+        font-size: 12.8033px;
+        color: #ffffff;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+      border-radius: 20px;
+    }
+    &:hover {
+      transform: scale(1.2);
+      .details {
+        transform: translate(0, 0);
+      }
+      .video-icon {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+      &::before {
+        background: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .testimonial-section {
+    padding: 5rem 0;
+    .title {
+      font-size: 60px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .testimonial-section {
+    .title {
+      font-size: 70px;
+    }
+  }
+}

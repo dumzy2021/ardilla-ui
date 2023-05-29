@@ -1,0 +1,109 @@
+.traction-section {
+  background: #1b0132;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 2rem 0;
+  .traction-gradient {
+    // background: linear-gradient(
+    //   118.8deg,
+    //   rgba(136, 7, 247, 0.6) 11.09%,
+    //   rgba(247, 194, 7, 0.6) 108%
+    // );
+    // opacity: 0.6;
+    // filter: blur(200px);
+  }
+  .title {
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-align: center;
+  }
+  .content {
+    margin-top: 6rem;
+    .info-box {
+      min-height: 500px;
+      margin: auto;
+      margin-bottom: 2rem;
+      max-width: 356px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 70px 70px 0px 70px;
+      .name {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+      }
+      .result {
+        color: #2a332c;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 45px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 30px;
+        }
+      }
+      .heading {
+        display: inline-block;
+        border-radius: 2px;
+        color: white;
+        padding: 0.2rem 0.8rem;
+      }
+    }
+    .investment {
+      background: url("/assets/images/investment.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      .heading {
+        background: #33593d;
+      }
+    }
+    .investment-2 {
+      background: url("/assets/images/investment-2.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      .heading {
+        background: #9f9704;
+      }
+    }
+    .risk {
+      background: url("/assets/images/risk-management.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      .heading {
+        background: #35298a;
+      }
+    }
+  }
+  .subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 3rem;
+    color: #fff;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .traction-section {
+    padding: 5rem 0;
+    .title {
+      font-size: 60px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .traction-section {
+    padding: 5rem 0 18rem;
+    .title {
+      font-size: 70px;
+    }
+  }
+}

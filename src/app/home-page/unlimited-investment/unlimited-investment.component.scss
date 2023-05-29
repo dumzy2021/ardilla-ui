@@ -1,0 +1,88 @@
+.investment-section {
+  min-height: 90vh;
+  background: url("/assets/images/arrow-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .content {
+    padding-top: 3rem;
+  }
+  .title,
+  .opportunity {
+    font-family: "Cabinet Grotesk";
+    font-style: normal;
+    font-weight: 800;
+
+    color: #3d0072;
+  }
+  .opportunity {
+    color: #0d9488;
+  }
+  .subtitle {
+    font-style: normal;
+    font-weight: 500;
+    color: #3d0072;
+  }
+  .invest-btn {
+    display: flex;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #8807f7;
+    color: #8807f7;
+    align-items: center;
+    font-style: normal;
+    gap: 0.4rem;
+    border-radius: 100px;
+    padding: 10px;
+    span {
+      width: 25px;
+      border-radius: 50%;
+      display: flex;
+      height: 25px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: #8807f7;
+    }
+    img {
+      width: 15px;
+    }
+    transition: all 0.3s;
+    &:hover {
+      background: #8807f7;
+      color: #fff;
+      span {
+        background: #fff;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .investment-section {
+    .content {
+      padding: 5rem 0;
+    }
+    .title,
+    .opportunity {
+      font-size: 60px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .investment-section {
+    .title,
+    .opportunity {
+      font-size: 70px;
+    }
+    .subtitle {
+      font-size: 24px;
+    }
+    .content {
+      padding: 7rem 0;
+    }
+    .invest-btn {
+      padding: 15px;
+    }
+  }
+}

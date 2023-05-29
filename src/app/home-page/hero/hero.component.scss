@@ -1,0 +1,119 @@
+.hero-section {
+  min-height: 80vh;
+  background: url("/assets/images/hero-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: end;
+  align-items: center;
+
+  .content {
+    margin-top: 2rem;
+    flex: 1;
+    text-align: center;
+    .hero-phone-container {
+      img {
+        max-width: 800px;
+      }
+    }
+  }
+  .nav-link {
+    color: #fff;
+  }
+  .nav-link:hover {
+    background: linear-gradient(
+      91.7deg,
+      #ffeb35 7.5%,
+      rgba(25, 253, 130, 0.99) 107.24%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .navbar-brand {
+    img {
+      width: 100px;
+      margin-bottom: 0.6rem;
+    }
+  }
+  .create-account {
+    margin: 2rem 0;
+    padding: 20px 48px;
+    background: #8807f7;
+    border-radius: 100px;
+    outline: none;
+    border: 0;
+    box-shadow: none;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    &:hover {
+      background: #680bb9;
+    }
+  }
+  .world {
+    width: 50px;
+  }
+  .nav-item {
+    margin-right: 1.5rem;
+  }
+  .title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-bottom: 3rem;
+    background: linear-gradient(
+      91.7deg,
+      #ffeb35 7.5%,
+      rgba(25, 253, 130, 0.99) 107.24%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+    width: 80%;
+    margin: auto;
+  }
+  .get-started {
+    margin: 2rem 0;
+    padding: 20px 48px;
+    background: #fff;
+    border-radius: 100px;
+    outline: none;
+    border: 0;
+    box-shadow: none;
+    text-align: center;
+    text-transform: capitalize;
+    color: #3d0072;
+    &:hover {
+      background: #680bb9;
+      color: #ffffff;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .hero-section {
+    // min-height: 100vh;
+    .title {
+      font-size: 55px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .hero-section {
+    .title {
+      font-size: 95px;
+    }
+  }
+}

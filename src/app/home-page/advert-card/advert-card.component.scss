@@ -1,0 +1,9 @@
+.advert-card {
+  position: relative;
+  margin-bottom: 4rem;
+}
+@media (min-width: 1400px) {
+  .advert-card {
+    margin-top: -300px;
+  }
+}
