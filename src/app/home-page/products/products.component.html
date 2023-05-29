@@ -1,0 +1,55 @@
+<section class="products-section">
+  <div class="container">
+    <h3 class="product-title">
+      Products
+    </h3>
+    <div class="row align-items-center " *ngFor="let item of products; let i = index"
+      [ngClass]="{'d-none':activeIndicator !== i + 1}">
+      <ng-container>
+        <div class="col-12 col-lg-8 col-xl-6">
+          <div class="content">
+            <div>
+              <h4 class="save">
+                {{item.save}}
+              </h4>
+              <h4 class="save-pace">
+                {{item.savePace}}
+              </h4>
+              <p class="save-subtitle">
+                {{item.subtitle}}
+              </p>
+            </div>
+            <div class="product-lists mt-5">
+              <div class="single-list" *ngFor="let list of item.list">
+                <span class="icon">
+                  <img src="assets/images/check-circle.png" alt="list-icon">
+                </span>
+                <p class="list-description">
+                  {{list}}
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-12 col-lg-4 col-xl-6">
+          <div class="product-img-container text-center">
+            <img [src]="item.img" alt="product-img">
+          </div>
+        </div>
+
+      </ng-container>
+    </div>
+    <div class="row">
+      <div class="col-12 my-5 pt-5">
+        <div class="outer-progress">
+          <div class="inner-progress" [ngStyle]="{width: _percentage}"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>

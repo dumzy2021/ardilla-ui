@@ -1,0 +1,87 @@
+.products-section {
+  background: #fffdf2;
+  border-radius: 32px 32px 0px 0px;
+  padding: 2rem 0;
+  .product-title {
+    font-family: "Cabinet Grotesk";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 110px;
+
+    color: #3d0072;
+  }
+  .save {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+
+    color: #e8356d;
+  }
+  .save-pace {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: #3d0072;
+  }
+  .save-subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+
+    color: #9ca3af;
+  }
+  .single-list {
+    display: flex;
+    margin-bottom: 1.2rem;
+    align-items: center;
+    gap: 0.7rem;
+    img {
+      width: 30px;
+    }
+    .list-description {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 0;
+      line-height: 20px;
+      color: #3d0072;
+    }
+  }
+  .outer-progress {
+    background: #f3f4f6;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 10px;
+
+    .inner-progress {
+      background: #8807f7;
+      border-radius: 20px;
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .products-section {
+    padding: 5rem 0;
+    .product-title {
+      font-size: 80px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .products-section {
+    padding: 5rem 0;
+    .content {
+      padding-left: 4rem;
+    }
+    .product-img-container {
+      padding-right: 4rem;
+    }
+  }
+}
