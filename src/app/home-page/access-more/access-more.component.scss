@@ -1,0 +1,83 @@
+.access-more-section {
+  background: #1b0132;
+  color: #ffffff;
+  padding: 2rem 0 0;
+  .title {
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+  .subtitle {
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+  .access-more-btn {
+    display: flex;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    align-items: center;
+    font-style: normal;
+    gap: 0.4rem;
+    background: transparent;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: 200;
+    img {
+      width: 15px;
+    }
+  }
+  .content {
+    margin-top: 4rem;
+    padding: 3rem 1rem;
+    background: #29014b;
+    box-shadow: 0px 10px 35px rgba(6, 46, 253, 0.25),
+      0px 15px 70px rgba(251, 64, 64, 0.25), 0px 0px 0px rgba(136, 7, 247, 0.5);
+    border-radius: 4px;
+  }
+  .info {
+    min-height: 440px;
+    padding: 2rem;
+    border-radius: 24px;
+    margin-bottom: 2rem;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      background: #43027e;
+    }
+
+    img {
+      width: 40px;
+    }
+    .info-title {
+      margin: 2rem 0;
+      font-weight: 700;
+    }
+    .subtitle {
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .access-more-section {
+    padding: 5rem 0 0;
+    .title {
+      font-size: 60px;
+    }
+    .access-more-btn {
+      padding: 15px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .access-more-section {
+    .title {
+      font-size: 70px;
+    }
+    .content {
+      padding: 6rem;
+    }
+  }
+}
