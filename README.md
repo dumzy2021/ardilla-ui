@@ -1,5 +1,10 @@
 # AridillaUi
 
+1. After Cloning the Project
+2. Run npm install or npm install --legacy-peer-deps to install the necessary dependencies
+3. Finally, serve the project using ng serve.
+4. I hope you enjoy
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
 
 ## Development server
