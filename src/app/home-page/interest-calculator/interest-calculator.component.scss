@@ -1,0 +1,65 @@
+.interest-calculator-section {
+  background: #ffffff;
+  border-radius: 32px 32px 0px 0px;
+  padding: 2rem 0;
+  .title {
+    line-height: 80px;
+    color: #3d0072;
+    font-family: "Cabinet Grotesk";
+    font-style: normal;
+    font-weight: 800;
+  }
+  .transparency {
+    font-family: "Cabinet Grotesk";
+    font-style: normal;
+    font-weight: 800;
+    color: #e8356d;
+  }
+  .subtitle {
+    margin-top: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #3d0072;
+  }
+  .get-started {
+    margin: 2rem 0;
+    padding: 20px 48px;
+    background: #8807f7;
+    border-radius: 100px;
+    outline: none;
+    border: 0;
+    box-shadow: none;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    &:hover {
+      background: #680bb9;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .interest-calculator-section {
+    padding: 5rem 0;
+    .title,
+    .transparency {
+      font-size: 60px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .interest-calculator-section {
+    padding: 7rem 0;
+    .content {
+      padding-left: 5rem;
+    }
+    .title,
+    .transparency {
+      font-size: 70px;
+    }
+    .interest-calculator-container {
+      padding-right: 5rem;
+    }
+  }
+}
