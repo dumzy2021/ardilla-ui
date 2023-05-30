@@ -25,7 +25,7 @@
     overflow: hidden;
     margin: auto;
     margin-bottom: 2rem;
-    max-width: 380px;
+    max-width: 350px;
 
     transition: all 0.5s ease-in-out;
     .user {
@@ -74,8 +74,9 @@
       z-index: 2;
       border-radius: 20px;
     }
-    &:hover {
-      transform: scale(1.2);
+    &:hover,
+    &.active {
+      transform: scale(1);
       .details {
         transform: translate(0, 0);
       }
@@ -101,6 +102,12 @@
   .testimonial-section {
     .title {
       font-size: 70px;
+    }
+    .info-box {
+      &:hover,
+      &.active {
+        transform: scale(1.2);
+      }
     }
   }
 }
